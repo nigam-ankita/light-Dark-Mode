@@ -1,84 +1,413 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light/Dark Mode</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <!-- Dark Mode Switch -->
-    <div class="theme-switch-wrapper">
-        <span id="toggle-icon">
-            <span class="toggle-text">Light Mode</span>
-            <i class="fas fa-sun"></i>
-        </span>
-        <label class="theme-switch">
-            <input type="checkbox">
-            <div class="slider round"></div>
-        </label>
-   </div>
-   <!-- Navigation -->
-    <nav id="nav">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
-    </nav>
-    <!-- Home Section -->
-    <section id="home">
-        <div class="title-group">
-            <h1>Hi i'm Ankita Nigam</h1>
-            <h2>I,m web developer!</h2>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="about">
-        <h1>My skills</h1>
-        <div class="about-container">
-            <div class="image-container">
-                <h2>Web Innovation</h2>
-                <img src="img/undraw_proud_coder_light.svg" alt="Proud Coder" id="image1">
+
+
+  <body>
+     
+ 
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top bg-dark">
+    <div class="container d-flex align-items-center justify-content-center ">
+        <a class="navbar-brand" href="#">
+            <img src="./asset/ankita logo.png" alt="Bootstrap" width="30" height="24">
+          </a>
+      <h1 class="logo " style="margin-right: 180px; padding: 20px;"><a href="index.html" class="text-decoration-none">PAN<SPAN style="color: aquamarine; text-decoration: none;">ZA</SPAN></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar text-decoration-none">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Skills</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Service</a></li>
+          <li><a class="nav-link scrollto" href="#team">Work</a></li>
+          <li><a class="nav-link scrollto" href="#team">Testinomial</a></li>
+          <li><a class="nav-link scrollto" href="#team">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li><i class="fa-solid fa-magnifying-glass text-white ms-4"></i>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h5 style="color: aliceblue; font-size: 22px;"> <strong>THE PANZA IS A <SPan style="color: aqua;"> WORDPRESS THEME</SPan></strong></h4>
+      <h1 style="font-size: 60px; line-height: 80px;">We Are Creative </h1>
+      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <div class="container mt-5 pt-3">
+        <a href="#about" class="btn btn-success text-white fw-bold text-decoration-none me-3 p-2 m-2">EXPLIORE NOW</a>
+        <a href="#about" class="btn btn-info text-white fw-bold text-decoration-none p-2">PURCHASE NOW</a>
+      </div>  
+    </div>
+  </section><!-- End Hero -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services" style="background-color: aliceblue;">
+        <div class="container-fluid">
+  
+          <div class="section-title">
+            <h3 class="">Creative Amazing Features <span></span></h3>
+           
+          </div>
+  
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 icon-box text-center">
+                  <div class="icon"></div>
+                  <h4 class="title"><i class="fa-solid fa-leaf fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                  <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"> <i class="fa-solid fa-video-slash  fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"><i class="fa-solid fa-search fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"><i class="fa-solid fa-laptop fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"><i class="fa-solid fa-mobile fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"><i class="fa-solid fa-book fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"><i class="fa-solid fa-video fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"><i class="fa-solid fa-radio fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box text-center">
+                    <div class="icon"></div>
+                    <h4 class="title"><i class="fa-solid fa-leaf fs-4 me-3 text-success"></i><a href="" class="text-decoration-none text-info">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+              
+
+              </div>
             </div>
-            <div class="image-container">
-                <h2>Problem Solving</h2>
-                <img src="img/undraw_feeling_proud_light.svg" alt="Feeling Proud" id="image2">              
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+
+
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-12 text-center pt-5 pb-4">
+               <h4>OUR AMAZING WORK</h4>
+           </div>
+        </div>
+        <div class="portfolio-menu mt-2 mb-4">
+           <ul>
+              <li class="btn btn-outline-dark active" data-filter="*">All</li>
+              <li class="btn btn-outline-dark" data-filter=".gts">Graphic Design</li>
+              <li class="btn btn-outline-dark" data-filter=".lap">Web Design</li>
+              <li class="btn btn-outline-dark text" data-filter=".selfie">Landing Pages</li>
+              <li class="btn btn-outline-dark text" data-filter=".selfie">WordPress</li>
+           </ul>
+        </div>
+        <div class="portfolio-item row m-5 p-5">
+           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="">
+              </a>
+           </div>
+           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" alt="">
+              </a>
+           </div>
+           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" alt="">
+              </a>
+           </div>
+           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" alt="">
+              </a>
+           </div>
+           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg" alt="">
+              </a>
+           </div>
+           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg" alt="">
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg" alt="">
+              </a>
+           </div>
+           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" alt="">
+              </a>
+           </div>
+           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" alt="">
+              </a>
+           </div>
+           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+              <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+              <img class="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="">
+              </a>
+           </div>
+
+           
+          
+          
+        </div>
+     </div>
+
+
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing " style="background-color: aliceblue;">
+            <div class="container">
+      
+              <div class="section-title">
+                <h4 data-aos="fade-up m-5">OUR PRICING TABLE</h4>
+              </div>
+      
+              <div class="row justify-content-center">
+      
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                  <div class="box">
+                    <h3><b>Personal</b></h3>
+                    <h4><sup>₹ </sup>7,499<span> /Year</span></h4>
+                    <ul>
+                        <li>Hosting</li>
+                      <li>5 Web Page Design</li>
+                      <li>Dynamic functionality-0</li>
+                      <li> Hosting Space (1GB)</li>
+                      <li>Support (only 2 Times)</li>
+                      <li>Maintenance
+                        ₹. 5000/Year</li>
+                    </ul>
+                    <div class="btn-wrap">
+                      <a href="#" class="btn-buy">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+                  <div class="box featured">
+                    <h3><b>Business</b></h3>
+                    <h4><sup>₹ </sup>12,499<span>/ year<span></h4>
+                    <ul>
+                        <li>Hosting</li>
+                      <li>6 Web Page Design</li>
+                      <li>Dynamic functionality-1</li>
+                      <li>Hosting Space (3GB)</li>
+                      <li>Support 24*7</li>
+                      <li>Maintenance
+                        ₹. 9000/Year</li>
+                    </ul>
+                    <div class="btn-wrap">
+                      <a href="#" class="btn-buy">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="box">
+                      <span class="advanced">Offer</span>
+                      <h3><b>Personal</b></h3>
+                      <h4><sup>₹</sup> 35,499<span> / Year</span></h4>
+                      <ul> <li>Hosting</li>
+                        <li>30 Web Page Design</li>
+                        <li>Dynamic functionality-5</li>
+                        <li> Hosting Space (Unlimited)</li>
+                        <li>SSL Security</li>
+                        <li>Maintenance ₹.15000/Year</li>
+                      </ul>
+                      <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                  <div class="box">
+                    <h3><b>Dimaond</b></h3>
+                    <h4><sup>₹ </sup>17,499<span> / year</span></h4>
+                    <ul> <li>Hosting</li>
+                      <li>10 Web Page Design</li>
+                      <li>Dynamic functionality-2</li>
+                      <li>Hosting Space (5GB)</li>
+                      <li>Support 24*7</li>
+                      <li>Maintenance
+                        ₹. 10000/Year</li>
+                    </ul>
+                    <div class="btn-wrap">
+                      <a href="#" class="btn-buy">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>     
+              </div>
+          </section>
+<!-- End Pricing Section -->
+
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container">
+
+      <div class="text-center">
+        <h3>What People Say About Panza</h3>
+        <!-- <h4 class=" pt-3 text-info fs-4">"</h4> -->
+        <p class="fs-5"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima deleniti ullam corrupti vitae consequuntur voluptate quam quo! Est, soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate est ipsa repellendus esse. Ad voluptatem dolores facilis, non recusandae quos!!"</p>
+        <h4 class=" pt-3 text-info">"Ankita Nigam"</h4>
+        <h5 class="  text-white">web Developer</h5>
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle shadow-1-strong" width="150" height="150">
+        
+      </div>
+
+    </div>
+  </section>
+  <!-- End Cta Section -->
+
+<!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+        <div class="container-fluid">
+  
+          <div class="section-title mb-5">
+            <h1><b>Contact</b></h1>
+          </div>
+  
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div class="row">
+  
+                <div class="col-lg-6">
+  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14722.096471756204!2d75.91360479913932!3d22.708752720316273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2dfda432ce1%3A0x106f8414d7e2c7ee!2sBicholi%20Mardana%2C%20Indore%2C%20Madhya%20Pradesh%20452016!5e0!3m2!1sen!2sin!4v1715195541633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+                </div>
+  
+                <div class="col-lg-6">
+                    
+                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <h2 class="pb-4">Keep In Touch</h3>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" class="form-control" id="name" required>
+                      </div>
+                      <div class="col-md-12 form-group mt-3 mt-md-0">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                      </div>
+                    </div>
+                    <!-- <div class="form-group mt-3">
+                      <label for="subject">Subject</label>
+                      <input type="text" class="form-control" name="subject" id="subject" required>
+                    </div> -->
+                    <div class="form-group mt-3">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" name="message" rows="8" required></textarea>
+                    </div>
+                    <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center px-5"><button type="submit">Send Request</button></div>
+                  </form>
+                </div>
+  
+              </div>
             </div>
-            <div class="image-container">
-                <h2>High Concept</h2>
-                <img src="img/undraw_conceptual_idea_light.svg" alt="Conceptual Idea" id="image3">
-            </div>
+          </div>
+  
         </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects">
-        <h1>Our Projects</h1>
-        <div class="buttons">
-            <button class="primary">Primary</button>
-            <button class="secondary">Secondary</button>
-            <button class="primary" disabled>Disabled</button>
-            <button class="outline">Outline</button>
-            <button class="secondary outline">Alt Outline</button>
-            <button class="outline" disabled>Disabled</button>
-        </div>
-        <div class="text-box" id="text-box">
-            <p>Web development involves solving numerous challenges like ensuring cross-browser compatibility, optimizing for responsive design, addressing slow loading times, fixing broken links, enhancing SEO, securing against vulnerabilities, customizing CMS, integrating payment gateways, handling form validation, and managing database connectivity for seamless user experiences.!</p>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="social-icons">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-codepen"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-medium"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-        </div>
-    </section>
-    <!-- Script -->
-    <script src="script.js"></script>
-</body>
+      </section><!-- End Contact Section -->
+
+
+   <script type="module" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
+ 
